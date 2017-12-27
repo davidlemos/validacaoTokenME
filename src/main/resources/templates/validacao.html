@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+         <title>Monkey Exchange</title>
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    </head>
+<body>
+<div class="container">
+
+	<h1><span th:text="${msg}"></span></h1>
+	<span th:if="${infoPessoa != ''}"><strong>Dados do usuário:</strong></span>
+    <p><span th:text="${infoPessoa}"></span></p>
+        
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
